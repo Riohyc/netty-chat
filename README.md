@@ -24,3 +24,31 @@ hyc | hyc | 普通用户 | 可以向所有用户群发消息
 - ```index.html```登录页
 - ```register.html```注册页
 
+## 通信
+通信消息使用JSON格式，所有消息均包含```op```属性用以区分消息的类型。例如
+```
+{
+  "op":"login",
+  "username":"root",
+  "password":"root"
+}
+
+{
+  "op":"updateChannel",
+  "username":"root"
+}
+
+{
+  "op":"getAllUser",
+  "onlineUsers":[
+    {
+      "id":0,
+      "username":"root"
+    },
+    {
+      "id":1,
+      "username":"hyc"
+    }
+  ]
+}
+```

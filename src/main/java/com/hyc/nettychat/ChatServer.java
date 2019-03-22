@@ -1,7 +1,7 @@
 package com.hyc.nettychat;
 
 import com.hyc.nettychat.chat.ChatManager;
-import com.hyc.nettychat.com.hyc.nettychat.handler.ChatHandler;
+import com.hyc.nettychat.handler.ChatHandler;
 import com.hyc.nettychat.user.UserManager;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
